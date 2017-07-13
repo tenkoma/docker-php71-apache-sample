@@ -1,5 +1,5 @@
 FROM php:7.1-apache
-RUN apt-get update && apt-get -y install git unzip zlib1g-dev libicu-dev
+RUN apt-get update && apt-get -y install git unzip zlib1g-dev libicu-dev netcat
 RUN docker-php-ext-install pdo pdo_mysql zip intl
 
 # Setup the Composer installer
